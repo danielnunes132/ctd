@@ -1,0 +1,63 @@
+function microondas(prato,tempo){
+    
+    //pipoca
+    if(prato == "pipoca" && tempo >= 10 && tempo < 10*2){
+        return  "Prato pronto, bom apetite!!!"
+    }else if(prato == "pipoca" && tempo >= 10*2 && tempo < 10*3){
+        return  "Prato pronto, bom apetite!!! - A comida queimou!!!"
+    }else if(prato == "pipoca" && tempo >= 10*3){
+        return  "KABUMM!"
+    }else if(prato == "pipoca" && tempo < 10){
+        return "Tempo insuficiente"
+    }
+   
+    //macarrão
+    else if(prato == "macarrao" && tempo >= 8 && tempo < 8*2){
+        return  "Prato pronto, bom apetite!!!"
+    }else if(prato == "macarrao" && tempo >= 8*2 && tempo < 8*3){
+        return  "A comida queimou!!!"
+    }else if(prato == "macarrao" && tempo >= 8*3){
+        return  "KABUMM!"
+    }else if(prato == "macarrao" && tempo < 8){
+        return "Tempo insuficiente"
+    }
+
+    //carne
+    else if(prato == "carne" && tempo >= 15 && tempo < 15*2){
+        return  "Prato pronto, bom apetite!!!"
+    }else if(prato == "carne" && tempo >= 15*2 && tempo < 15*3){
+        return  "A comida queimou!!!"
+    }else if(prato == "carne" && tempo >= 15*3){
+        return  "KABUMM!"
+    }else if(prato == "carne" && tempo < 15){
+        return "Tempo insuficiente"
+    }
+
+    //feijão
+    else if(prato == "feijao" && tempo >= 12 && tempo < 12*2){
+        return  "Prato pronto, bom apetite!!!"
+    }else if(prato == "feijao" && tempo >= 12*2 && tempo < 12*3){
+        return  "A comida queimou!!!"
+    }else if(prato == "feijao" && tempo >= 12*3){
+        return  "KABUMM!"
+    }else if(prato == "feijao" && tempo < 12){
+        return "Tempo insuficiente"
+    }
+
+    //brigadeiro
+    else if(prato == "brigadeiro" && tempo >= 8 && tempo < 8*2){
+        return  "Prato pronto, bom apetite!!!"
+    }else if(prato == "brigadeiro" && tempo >= 8*2 && tempo < 8*3){
+        return  "A comida queimou!!!"
+    }else if(prato == "brigadeiro" && tempo >= 8*3){
+        return  "KABUMM!"
+    }else if(prato == "brigadeiro" && tempo < 8){
+        return "Tempo insuficiente"
+    }
+
+    //prato inexistente
+    else{
+        return "Prato inexistente"
+    }
+}
+console.log(microondas("macarrao",11))
